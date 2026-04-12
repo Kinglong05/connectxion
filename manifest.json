@@ -1,0 +1,19 @@
+{
+  "name": "ConnectXion Social Hub",
+  "short_name": "ConnectXion",
+  "description": "The Ultimate Tactical Gaming Social Platform.",
+  "start_url": "/connectxion/login.php",
+  "display": "standalone",
+  "background_color": "#0a0b10",
+  "theme_color": "#ff4655",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "photos/app-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["social", "games", "entertainment"]
+}

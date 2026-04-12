@@ -1,0 +1,36 @@
+services:
+  - type: web
+    name: connectxion
+    env: php
+    plan: free
+    buildCommand: composer install
+    startCommand: apache2-foreground
+    envVars:
+      - key: MYSQLHOST
+        fromDatabase:
+          name: connectxion-db
+          property: host
+      - key: MYSQLUSER
+        fromDatabase:
+          name: connectxion-db
+          property: user
+      - key: MYSQLPASSWORD
+        fromDatabase:
+          name: connectxion-db
+          property: password
+      - key: MYSQLDATABASE
+        fromDatabase:
+          name: connectxion-db
+          property: name
+      - key: MYSQLPORT
+        fromDatabase:
+          name: connectxion-db
+          property: port
+      - key: SOCKET_URL
+        value: https://your-socket-server.onrender.com
+
+databases:
+  - name: connectxion-db
+    plan: free
+    databaseName: connectxion
+    user: connectxion_user
