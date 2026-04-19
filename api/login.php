@@ -42,10 +42,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <title>LOGIN | CONNECTXION</title>
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#0a0b10">
-    <link rel="apple-touch-icon" href="photos/app-icon.png">
+    <link rel="apple-touch-icon" href="<?= BASE_URL ?>/photos/app-icon.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="themes.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/<?= BASE_URL ?>/themes.css">
     <style>
         * {
             margin: 0;
@@ -480,7 +480,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <!-- Global Mobile Responsive Overrides -->
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="loading.css">
-    <link rel="stylesheet" href="themes.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/<?= BASE_URL ?>/themes.css">
 </head>
 <body>
     <!-- Static Orbs -->
@@ -495,7 +495,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <div class="visual-side">
                     <div class="gaming-logo">
                         <div class="logo-image">
-                            <img src="photos/logo.png" alt="CONNECTXION GAMING">
+                            <img src="<?= BASE_URL ?>/photos/logo.png" alt="CONNECTXION GAMING">
                         </div>
                     </div>
                 </div>
@@ -575,7 +575,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <div class="tech-ring middle"></div>
                 <div class="tech-ring inner"></div>
                 <div class="loading-logo">
-                    <img src="photos/logo.png" alt="Logo">
+                    <img src="<?= BASE_URL ?>/photos/logo.png" alt="Logo">
                 </div>
             </div>
             <div class="loading-info">
