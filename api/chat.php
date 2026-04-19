@@ -1,19 +1,19 @@
 <?php
-require_once 'db.php';
+require_once '../db.php';
 requireLogin();
 
 $user_id = $_SESSION['user_id'];
 $friend_id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
 
 if (!$friend_id) {
-    header("Location: home.php");
+            header("Location: ../home.php");
     exit();
 }
 
 $result = $conn->query("SELECT * FROM users WHERE user_id = $friend_id");
 
 if (!$result || $result->num_rows === 0) {
-    header("Location: home.php?error=user_not_found");
+            header("Location: ../home.php?error=user_not_found");
     exit();
 }
 
@@ -3438,7 +3438,7 @@ function getAvatarLetter($username) {
         
         isLoading = true;
         
-        fetch(`load_messages.php?id=<?php echo $friend_id; ?>`)
+        fetch(`<?= BASE_URL ?>/api/<?= BASE_URL ?>/api/load_messages.php?id=<?php echo $friend_id; ?>`)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
@@ -4009,7 +4009,7 @@ function getAvatarLetter($username) {
                 statusText.innerHTML = '<span class="status-dot"></span> <?php echo $is_online ? "ONLINE" : "OFFLINE"; ?>';
             }
         });
-        
+../        
         // Overwrite the manual checkInterval with a much slower one as a rare backup
         if (typeof checkInterval !== 'undefined') {
             clearInterval(checkInterval);
