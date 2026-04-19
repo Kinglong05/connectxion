@@ -1,9 +1,9 @@
 <?php
 
-require_once 'db.php';
+require_once '../db.php';
 
 if (!isset($_SESSION['user_id']) || empty($_SESSION['user_id'])) {
-    header("Location: login.php");
+        header("Location: ../login.php");
     exit();
 }
 
@@ -185,7 +185,7 @@ function getAvatarLetter($username) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>CHAT HUB | CONNECTXION</title>
 
-    <link rel="stylesheet" href="themes.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/<?= BASE_URL ?>/themes.css">
     <style>
         * {
             margin: 0;
@@ -1674,7 +1674,7 @@ function getAvatarLetter($username) {
     <link rel="stylesheet" href="system_dialogs.css">
     <script src="system_dialogs.js" defer></script>
     <link rel="stylesheet" href="loading.css">
-    <link rel="stylesheet" href="themes.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/<?= BASE_URL ?>/themes.css">
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#0a0b10">
     <link rel="apple-touch-icon" href="photos/app-icon.png">
