@@ -70,7 +70,7 @@ function getAvatarLetter($username) {
     <!-- Socket.IO Client -->
     <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
     <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/themes.css">
-    <link rel="stylesheet" href="system_dialogs.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/system_dialogs.css">
     <script src="system_dialogs.js" defer></script>
     <style>
         /* ========== YOUR EXISTING CSS STYLES GO HERE ========== */
