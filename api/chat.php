@@ -69,7 +69,7 @@ function getAvatarLetter($username) {
 
     <!-- Socket.IO Client -->
     <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
-    <link rel="stylesheet" href="themes.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/<?= BASE_URL ?>/assets/css/themes.css">
     <link rel="stylesheet" href="system_dialogs.css">
     <script src="system_dialogs.js" defer></script>
     <style>
@@ -2171,9 +2171,9 @@ function getAvatarLetter($username) {
 
     </style>
     <!-- Global Mobile Responsive Overrides -->
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="loading.css">
-    <link rel="stylesheet" href="themes.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/responsive.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/<?= BASE_URL ?>/assets/css/loading.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/themes.css">
 </head>
 <body>
     <div class="app-container">
