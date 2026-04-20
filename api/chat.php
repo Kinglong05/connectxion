@@ -3959,7 +3959,7 @@ function getAvatarLetter($username) {
 
     <!-- Realtime Integration -->
     <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
-    <script src="realtime.js"></script>
+    <script src=""></script>
     <script>
         // Initialize Realtime API with current user context
         const realtime = new RealtimeAPI({
